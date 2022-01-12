@@ -1,0 +1,297 @@
+<!-- BIT607 Assignment2 Part1
+     Shigeko Fujimoto
+     Student Number: 5047829-->
+
+     <!-- Image references 
+          https://pixabay.com/vectors/food-dish-meat-potatoes-vegetable-576600/
+          https://pixabay.com/vectors/tartlet-calorie-desserts-food-157092/
+          https://pixabay.com/vectors/champagne-clink-glasses-alcohol-160867/
+          https://pixabay.com/vectors/food-plate-fish-vegetable-prawns-576547/ -->
+
+     <!DOCTYPE html>
+     <html>
+         <head>
+             <!-- Title of the webpage -->
+             <title>The Haukai Restaurant | Menu</title>
+             <!-- Link to the style sheet -->
+             <link rel='stylesheet' type='text/css' href='./styles/default.css'>
+             <!-- Link to the javascript file -->
+             <script type="text/javascript" src="./javascript/default.js"></script>
+             <!-- Viewport tag for responsive layout -->
+             <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         </head>
+         <body>
+             <!-- Header section of the website with an ARIA landmark role -->
+             <header class="nav-top" id="top" role="banner">
+                <!-- Navigation menu at the top of the website with an ARIA landmark role and an aira-label -->
+                <nav class="navigation" id="top" role="navigation" aria-label="Top Navigation">
+                    <!-- Restaurant logo image -->
+                    <div class="logo">
+                        <a href="./index.html"><img src="./images/logo.png" alt="The Hauraki Restaurant logo"></a>
+                    </div>
+                    <!-- Navigation menu items -->
+                    <div class="list" id="list">
+                        <div class="navigation-item">
+                            <a href='./menu.html'>Menu</a>
+                        </div>
+                        <div class="navigation-item">
+                            <a href='./reservations.html'>Reservations</a>
+                        </div>
+                        <div class="navigation-item">
+                            <a href='./hours.html'>Hours</a>
+                        </div>
+                        <div class="navigation-item">
+                            <a href='./contact.html'>Contact</a>
+                        </div>
+                    </div>
+                    <!-- Hamburger menu icon with javascript. Clicking this will open the menu with dark colour background -->
+                    <a href="javascript:void(0);" class="icon"  id="icon" onclick="hamburgerMenu()">
+                        <!-- Unicode character of three stack lines-->
+                        &#9776;
+                    </a>
+                </nav>
+             </header>
+             <!-- Main content with an ARIA landmark role -->
+             <main class="main" role="main">
+                 <div class="menu">
+                    <h2>Menu</h2>
+                    <!-- Appetizers section of the menu -->
+                    <h3 class="menu-title">APPETIZERS</h3>
+                    <p class="menu-item">REWENA BREAD <span class="menu-price">10</span></p>
+                    <p class="menu-description">Traditional Māori bread.</p>
+                    <p class="menu-item">PAUA FRITTER <span class="menu-price">16</span></p>
+                    <p class="menu-description">Finely diced pieces of paua, served with a side salad and horopito dressing.</p>
+                    <p class="menu-item">RAW FISH <span class="menu-price">20</span></p>
+                    <p class="menu-description">Dried snapper fish marinated in coconut cream, served with tomatoes and spring onions.</p>
+                    <p class="menu-item">POACHED SALMON <span class="menu-price">22</span></p>
+                    <p class="menu-description">Salmon poached in an orange and pistachio glaze, served with rewena bread.</p>
+                    <p class="menu-item">SEAFOOD BASKET <span class="menu-price">25</span></p>
+                    <p class="menu-description">Crumbed mussels, salt and pepper squid, crumbed hoki bites and garlic prawns.</p>
+                    <!-- Image for Appetizers menu -->
+                    <img src="./images/prawn.png" alt="Prawn with some vegitables on a square plate">
+                    <br/>
+                    <!-- Main section of the menu -->
+                    <h3 class="menu-title">MAIN</h3>
+                    <p class="menu-item">FISH OF THE DAY <span class="menu-price">25</span></p>
+                    <p class="menu-description">Beer battered fish and kumara fries, served with a side salad and homemade tartare.</p>
+                    <p class="menu-item">MUSSELS AND SCALLOPS <span class="menu-price">25</span></p>
+                    <p class="menu-description">Steamed mussel & scallop mousse, honey and soy broth.</p>
+                    <p class="menu-item">SEAFOOD CHOWDER <span class="menu-price">30</span></p>
+                    <p class="menu-description">Creamy chowder filled with terakihi, prawn, hoki, scallops and mussels, served with flatbread.</p>
+                    <p class="menu-item">PORK BELLY <span class="menu-price">30</span></p>
+                    <p class="menu-description">Slow cooked pork belly served on a bed of apple slaw with roasted kumara, and crispy noodle.</p>
+                    <p class="menu-item">LAMB STEAK <span class="menu-price">33</span></p>
+                    <p class="menu-description">New Zealand Lamb coated in a kawakawa crumb, served with Dijon mustard glazed carrots, roasted butternut squash and a mushroom Jus.</p>
+                    <p class="menu-item">VENISON <span class="menu-price">33</span></p>
+                    <p class="menu-description">Venison crusted with horopito, served with glazed plums, cabbage salad and red wine Jus.</p>
+                    <!-- Image for Main menu -->
+                    <img src="./images/stake.png" alt="Stake, potato and green salad on a round white plate">
+                    <br/>
+                    <!-- Dessert section of the menu -->
+                    <h3 class="menu-title">DESSERT</h3>
+                    <p class="menu-item">KĀPITI ICE CREAM <span class="menu-price">10</span></p>
+                    <p class="menu-description">Check for daily specials.</p>
+                    <p class="menu-item">STEAM PUDDING <span class="menu-price">12</span></p>
+                    <p class="menu-description">Golden syrup flavoured steam pudding, served with vanilla ice cream.</p>
+                    <p class="menu-item">MINI PAVLOVA <span class="menu-price">16</span></p>
+                    <p class="menu-description">Mini Pavlova served with kawakawa and lemon infused cream and fresh fruit.</p>
+                    <p class="menu-item">BANOFFEE PIE <span class="menu-price">16</span></p>
+                    <p class="menu-description">Toffee, fresh bananas and fresh cream.</p>
+                    <!-- Image for Dessert menu -->
+                    <img src="./images/pudding.png" alt="Pudding with caramel sauce on a round white plate">
+                    <br/>
+                    <!-- Beverages section of the menu -->
+                    <h3 class="menu-title">BEVERAGES</h3>
+                    <!-- Tables to show drink menu -->
+                    <!-- Table for red wines -->
+                    <table class="menu-table">
+                        <tr>
+                            <!-- Table header for red wines -->
+                            <th class="menu-table-item">RED</th>
+                            <th class="menu-table-price">B/G</th>
+                        </tr>
+                        <tr>
+                            <!-- Table content for red wines -->
+                            <td class="menu-table-item">Terrace Edge Pinot Noir, 2012, Wairarapa</td>
+                            <td class="menu-table-price">53/13</td>
+                        </tr>
+                        <tr>
+                            <td class="menu-table-item">Altitude Pinot Noir, 2010, Marlborough</td>
+                            <td class="menu-table-price">64/15</td>
+                        </tr>
+                        <tr>
+                            <td class="menu-table-item">Greystone Pinot Noir, 2012, Wairarapa</td>
+                            <td class="menu-table-price">73/17</td>
+                        </tr>
+                        <tr>
+                            <td class="menu-table-item">Terrace Edge, Syrah, 2012 Wairarapa</td>
+                            <td class="menu-table-price">53/13</td>
+                        </tr>
+                        <tr>
+                            <td class="menu-table-item">Altitude Syrah, 2010 Marlborough</td>
+                            <td class="menu-table-price">64/15</td>
+                        </tr>
+                        <tr>
+                            <td class="menu-table-item">Greystone Syrah, 2012, Wairarapa</td>
+                            <td class="menu-table-price">73/17</td>
+                        </tr>
+                        <tr>
+                            <td class="menu-table-item">Pegasus Bay Merlot, 2013, Waipara</td>
+                            <td class="menu-table-price">65/14</td>
+                        </tr>
+                        <tr>
+                            <td class="menu-table-item">Pegasus Bay Pinot Noir, 2013, Waipara</td>
+                            <td class="menu-table-price">110</td>
+                        </tr>
+                        <!-- Table for white wines -->
+                        <table class="menu-table">
+                           <tr>
+                              <!-- Table header for white wines -->
+                              <th class="menu-table-item">WHITE</th>
+                              <th class="menu-table-price"></th>
+                           </tr>
+                           <tr>
+                               <!-- Table content for white wines -->
+                               <td class="menu-table-item">Spade Oak Pinot Gris, 2011, Gisborne</td>
+                               <td class="menu-table-price">40/10</td>
+                           </tr>
+                           <tr>
+                               <td class="menu-table-item">Maude Pinot Gris, 2017, Otago</td>
+                               <td class="menu-table-price">49.50/11</td>
+                           </tr>
+                           <tr>
+                               <td class="menu-table-item">Charles Wiffen Chardonnay, 2013, Otago</td>
+                               <td class="menu-table-price">48/11</td>
+                           </tr>
+                           <tr>
+                               <td class="menu-table-item">Amisfield, Riesling, 2016, Otago</td>
+                               <td class="menu-table-price">53/12</td>
+                           </tr>
+                           <tr>
+                               <td class="menu-table-item">Lamont Riesling, 2010, Otago</td>
+                               <td class="menu-table-price">57/13</td>
+                           </tr>
+                           <tr>
+                               <td class="menu-table-item">Elephant Hill Viognier, 2013, Hawkes Bay</td>
+                               <td class="menu-table-price">55/12</td>
+                           </tr>
+                           <tr>
+                               <td class="menu-table-item">Folium Sauvignon Blanc, 2011, Marlborough</td>
+                               <td class="menu-table-price">52/11</td>
+                           </tr>
+                           <tr>
+                               <td class="menu-table-item">Billecart-Salmon Brut Reserve, France</td>
+                               <td class="menu-table-price">120</td>
+                           </tr>
+                        </table>
+                        <!-- Table for beers and ciders -->
+                        <table class="menu-table">
+                           <tr>
+                              <!-- Table header for beers and ciders -->
+                              <th class="menu-table-item">BEER AND CIDER</th>
+                              <th class="menu-table-price"></th>
+                           </tr>
+                           <tr>
+                               <!-- Table content for beers and ciders-->
+                               <td class="menu-table-item">Garage project range</td>
+                               <td class="menu-table-price">11</td>
+                           </tr>
+                           <tr>
+                               <td class="menu-table-item">Tuatara range</td>
+                               <td class="menu-table-price">11</td>
+                           </tr>
+                           <tr>
+                               <td class="menu-table-item">Panhead range</td>
+                               <td class="menu-table-price">10</td>
+                           </tr>
+                           <tr>
+                               <td class="menu-table-item">Coopers Ale</td>
+                               <td class="menu-table-price">10</td>
+                           </tr>
+                           <tr>
+                               <td class="menu-table-item">Heineken</td>
+                               <td class="menu-table-price">11</td>
+                           </tr>
+                           <tr>
+                               <td class="menu-table-item">Moa Cider</td>
+                               <td class="menu-table-price">10</td>
+                           </tr>
+                           <tr>
+                               <td class="menu-table-item">Crooked Cider</td>
+                               <td class="menu-table-price">10</td>
+                           </tr>
+                        </table>
+                        <!-- Table for non-clcoholic beverages -->
+                        <table class="menu-table">
+                           <tr>
+                              <!-- Table header for non-clcoholic beverages -->
+                              <th class="menu-table-item">NON-ALCOHOLIC</th>
+                              <th class="menu-table-price"></th>
+                           </tr>
+                           <tr>
+                               <!-- Table content for non-clcoholic beverages -->
+                               <td class="menu-table-item">Mineral water</td>
+                               <td class="menu-table-price">4.00</td>
+                           </tr>
+                           <tr>
+                               <td class="menu-table-item">Soft drinks</td>
+                               <td class="menu-table-price">4.00</td>
+                           </tr>
+                           <tr>
+                               <td class="menu-table-item">Juice</td>
+                               <td class="menu-table-price">4.00</td>
+                           </tr>
+                           <tr>
+                               <td class="menu-table-item">Coffee</td>
+                               <td class="menu-table-price">4.50</td>
+                           </tr>
+                           <tr>
+                               <td class="menu-table-item">Tea</td>
+                               <td class="menu-table-price">3.50</td>
+                           </tr>
+                        </table>
+                        <!-- Image for drink menu -->
+                        <img src="./images/drink.png" alt="Clinking two champagne glasses together">
+                    </table>
+                 </div>
+                 <div class="top">
+                     <!-- Home link to go back to the top of the page -->
+                     <a href="#top">Back to Top</a>
+                 </div>
+             </main>
+             <hr>
+             <!-- Footer menu section with an ARIA landmark role and an aria-label -->
+             <footer class="footer" role="navigation" aria-label="Footer Navigation">
+                <div class="footer-left">
+                    <div class="footer-item">
+                        <!-- Link to the home page -->
+                        <a href='./index.html'>Home</a>
+                    </div>
+                    <div class="footer-item">
+                        <!-- Link to the Menu page -->
+                        <a href='./menu.html'>Menu</a>
+                    </div>
+                    <div class="footer-item">
+                        <!-- Link to the Reservation page -->
+                        <a href='./reservations.html'>Reservations</a>
+                    </div>
+                    <div class="footer-item">
+                        <!-- Link to the Hours page -->
+                        <a href='./hours.html'>Hours</a>
+                    </div>
+                    <div class="footer-item">
+                        <!-- Link to the Contact page -->
+                        <a href='./contact.html'>Contact</a>
+                    </div>
+                </div>
+                <!-- Link to the Privacy Policy page -->
+                <div class="footer-right">
+                    <a href="./privacy.html"><h4>Privacy Statement</h4></a>
+                </div>
+             </footer>
+             <!-- Copy right section -->
+             <div class="copyright">
+                <p>Conpyright &copy;2022 The Haukai Restaurant. All rights reserved.</p>
+             </div>
+         </body>
+     </html>

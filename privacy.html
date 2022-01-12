@@ -1,0 +1,99 @@
+<!-- BIT607 Assignment2 Part1
+     Shigeko Fujimoto
+     Student Number: 5047829-->
+
+     <!DOCTYPE html>
+     <html>
+         <head>
+             <!-- Title of the webpage -->
+             <title>The Haukai Restaurant | Privacy Statement</title>
+             <!-- Link to the style sheet -->
+             <link rel='stylesheet' type='text/css' href='./styles/default.css'>
+             <!-- Link to the javascript file -->
+             <script type="text/javascript" src="./javascript/default.js"></script>
+             <!-- Viewport tag for responsive layout -->
+             <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         </head>
+         <body>
+             <!-- Header section of the website with an ARIA landmark role-->
+            <header class="nav-top" id="top" role="banner">
+                <!-- Navigation menu at the top of the website with an ARIA landmark role and an aira-label -->
+                <nav class="navigation" id="top" role="navigation" aria-label="Top Navigation">
+                    <!-- Restaurant logo image -->
+                    <div class="logo">
+                        <a href="./index.html"><img src="./images/logo.png" alt="The Hauraki Restaurant"></a>
+                    </div>
+                    <!-- Navigation menu items -->
+                    <div class="list" id="list">
+                        <div class="navigation-item">
+                            <a href='./menu.html'>Menu</a>
+                        </div>
+                        <div class="navigation-item">
+                            <a href='./reservations.html'>Reservations</a>
+                        </div>
+                        <div class="navigation-item">
+                            <a href='./hours.html'>Hours</a>
+                        </div>
+                        <div class="navigation-item">
+                            <a href='./contact.html'>Contact</a>
+                        </div>
+                    </div>
+                    <!-- Hamburger menu icon with javascript. Clicking this will open the menu with dark colour background -->
+                    <a href="javascript:void(0);" class="icon"  id="icon" onclick="hamburgerMenu()">
+                        <!-- Unicode character of three stack lines-->
+                        &#9776;
+                    </a>
+                </nav>
+            </header>
+             <!-- Main content with an ARIA landmark role -->
+             <main class="main" role="main">
+                 <h2>Privacy Statement</h2>
+                    <div class="privacy">
+                        <p>We collect personal information from you via a web form on this website, including information about your name, contact information and interactions with us.</p>
+                        <p>We collect your personal information in order to reserve a table for you.</p>
+                        <p>Providing some information is optional. If you choose not to enter your name and contact information, we'll be unable to reserve a table for them.</p>
+                        <p>We keep your information safe by storing it in encrypted files and only allowing certain staff to access it .</p>
+                        <p>We keep your information for two years at which point we securely destroy it by completely erasing all the digital information regarding to you.</p>
+                        <p>You have the right to ask for a copy of any personal information we hold about you, and to ask for it to be corrected if you think it is wrong. If you’d like to ask for a copy of your information, or to have it corrected, please contact us at info@haukairestaurant.co.nz, or 09 401 4019, or 1 Island Street, Kerikeri, Bay of Islands.</p>
+                    </div>
+                    <div class="top">
+                        <!-- Link to go back to the top of the page -->
+                        <a href="#top">Back to Top</a>
+                    </div>
+                </main>
+             <hr>
+             <!-- Footer menu section with an ARIA landmark role and an aria-label -->
+             <footer class="footer" role="navigation" aria-label="Footer Navigation">
+                <div class="footer-left">
+                    <div class="footer-item">
+                        <!-- Link to the home page -->
+                        <a href='./index.html'>Home</a>
+                    </div>
+                    <div class="footer-item">
+                        <!-- Link to the Menu page -->
+                        <a href='./menu.html'>Menu</a>
+                    </div>
+                    <div class="footer-item">
+                        <!-- Link to the Reservation page -->
+                        <a href='./reservations.html'>Reservations</a>
+                    </div>
+                    <div class="footer-item">
+                        <!-- Link to the Hours page -->
+                        <a href='./hours.html'>Hours</a>
+                    </div>
+                    <div class="footer-item">
+                        <!-- Link to the Contact -->
+                        <a href='./contact.html'>Contact</a>
+                    </div>
+                </div>
+                <!-- Link to the Privacy Policy page -->
+                <div class="footer-right">
+                    <a href="./privacy.html"><h4>Privacy Statement</h4></a>
+                </div>
+             </footer>
+             <!-- Copy right section -->
+             <div class="copyright">
+                <p>Conpyright &copy;2022 The Haukai Restaurant. All rights reserved.</p>
+             </div>
+         </body>
+     </html>

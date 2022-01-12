@@ -1,0 +1,125 @@
+<!-- BIT607 Assignment2 Part1
+     Shigeko Fujimoto
+     Student Number: 5047829-->
+
+<!-- Image references: 
+     https://pixabay.com/photos/table-table-setting-event-utensils-4397860/
+     https://commons.wikimedia.org/wiki/File:Hangi_ingredients.jpg
+     https://commons.wikimedia.org/wiki/File:Maori_Statue_in_Rotorua_New_Zealand.JPG
+     https://pixabay.com/photos/green-fern-leaves-foliage-natural-715535/
+     https://pixabay.com/photos/cafe-beachside-restaurant-beach-6531490/ -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Title of the webpage -->
+        <title>The Haukai Restaurant</title>
+        <!-- Link to the style sheet -->
+        <link rel='stylesheet' type='text/css' href='./styles/default.css'>
+        <!-- Link to the javascript file -->
+        <script type="text/javascript" src="./javascript/default.js"></script>
+        <!-- Viewport tag for responsive layout -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <!-- Header section with an ARIA landmark role-->
+        <header class="header" role="banner">
+            <!-- Navigation menu at the top of the website with an ARIA landmark role and an aira-label -->
+            <nav class="navigation" id="top" role="navigation" aria-label="Top Navigation">
+                <!-- Restaurant logo image -->
+                <div class="logo">
+                    <a href="./index.html"><img src="./images/logo.png" alt="The Hauraki Restaurant logo"></a>
+                </div>
+                <!-- Navigation menu items -->
+                <div class="list" id="list">
+                    <div class="navigation-item">
+                        <a href='./menu.html'>Menu</a>
+                    </div>
+                    <div class="navigation-item">
+                        <a href='./reservations.html'>Reservations</a>
+                    </div>
+                    <div class="navigation-item">
+                        <a href='./hours.html'>Hours</a>
+                    </div>
+                    <div class="navigation-item">
+                        <a href='./contact.html'>Contact</a>
+                    </div>
+                </div>
+                <!-- Hamburger menu icon with javascript. Clicking this will open the menu with dark colour background -->
+                <a href="javascript:void(0);" class="icon"  id="icon" onclick="hamburgerMenu()">
+                    <!-- Unicode character of three stack lines-->
+                    &#9776;
+                </a>
+            </nav>
+            <!-- Header text to grab users' attention -->
+            <div class="heading">
+                <div>
+                    <h1>Nau mai haere mai<br>Welcome to <br>Haukai Restaurant</hi>
+                </div>
+            </div>
+        </header>
+        <!-- Main content with an ARIA landmark role -->
+        <main class="main" role="main">
+            <!-- Section which introduces about the restaurant -->
+            <div class="home">
+                <h2>We specialise in Māori kai</h2>
+                <p>
+                    In the beautiful nature of Bay of Islands, we offer New zealand traditional Māori and Pākeha kai and drinks. With the experience of Te Ao Māori with using karakia, we are sure that your moment with us will certainly be special and unforgettable.
+                </p>
+                <!-- Images of the restaurant and Maori culture -->
+                <div class="images">
+                    <div class="image">
+                        <img src="./images/statue.jpg" alt="Red and black colour Maori statue">
+                    </div>
+                    <div class="image">
+                        <img src="./images/restaurant.jpg" alt="A table at the outside of the restaurant with seaview in the background">
+                    </div>
+                    <div class="image">
+                        <img src="./images/hangi_ingredients.jpg" alt="Hangi ingridients with kumara, potato and meat">
+                    </div>
+                    <div class="image">
+                        <img src="./images/fern.jpg" alt="One large fern leaf">
+                    </div>
+                </div>
+                <div class="top">
+                    <!-- Link to go back to the top of the page -->
+                    <a href="#top">Back to Top</a>
+                </div>
+            </div>
+        </main>
+        <hr>
+        <!-- Footer menu section  with an ARIA landmark role and an aria-label -->
+        <footer class="footer" role="navigation" aria-label="Footer Navigation">
+            <div class="footer-left">
+                <div class="footer-item">
+                    <!-- Link to the home page -->
+                    <a href='./index.html'>Home</a>
+                </div>
+                <div class="footer-item">
+                    <!-- Link to the Menu page -->
+                    <a href='./menu.html'>Menu</a>
+                </div>
+                <div class="footer-item">
+                    <!-- Link to the Reservation page -->
+                    <a href='./reservations.html'>Reservations</a>
+                </div>
+                <div class="footer-item">
+                    <!-- Link to the Hours page -->
+                    <a href='./hours.html'>Hours</a>
+                </div>
+                <div class="footer-item">
+                    <!-- Link to the Contact page -->
+                    <a href='./contact.html'>Contact</a>
+                </div>
+            </div>
+            <!-- Link to the Privacy Policy page -->
+            <div class="footer-right">
+                <a href="./privacy.html"><h4>Privacy Statement</h4></a>
+            </div>
+        </footer>
+        <!-- Copy right section -->
+        <div class="copyright">
+            <p>Conpyright &copy;2022 The Haukai Restaurant. All rights reserved.</p>
+        </div>
+    </body>
+</html>

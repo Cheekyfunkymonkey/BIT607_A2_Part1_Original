@@ -1,0 +1,385 @@
+/* The smallest mobile screen size is considered as 320px according to this website
+https://www.freecodecamp.org/news/css-media-queries-breakpoints-media-types-standard-resolutions-and-more/
+and the screen size smaller than that is not considered in this assignment website */
+
+/* Style for the entire website */
+body{
+    background-color: #404040;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white; 
+    font-size: 1.5vw;
+}
+/* Style for the non-visited links */
+a:link{
+    text-decoration: none;
+    color: white;
+}
+/* Style for the visited links */
+a:visited{
+    text-decoration: none;
+    color: white;
+}
+/* Style for when the pointer hovers over the links */
+a:hover{
+    text-decoration: none;
+    color: rgb(207, 250, 203);
+}
+/* Style for the horizontal line */
+hr{
+    width: 55%;
+    margin: 50px auto;
+    
+}
+/* Style for the header section at the top of the page */
+.header{
+    background-image: url("../images/heading.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+}
+.nav-top{
+    background-image: url("../images/nav-top.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 120px;
+}
+/* Style for the navigation menues */
+.navigation{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5vw;
+    height: 20vh;
+    width: 100%;
+}
+/* Style for the logo */
+.logo{
+    padding: 20px;
+    margin: 0 1.5vw;
+    float: left;
+}
+/* Style for the top navigation list */
+.list{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: flex-start;
+    z-index: 10;
+}
+/* Style for the individual navigation menu items */
+.navigation-item{
+    padding: 2vw 3.5vw;
+    height: 30px;
+}
+/* Style for the hamburger menu icon */
+.icon{
+    display: none;
+}
+/* Style for the h1 text in the header section */
+.heading h1{
+    color:#ebf3c8;
+    font-size: 3.5vw;
+    letter-spacing: 2px;
+    white-space: normal;
+    text-align: center;
+    margin: 10px auto;
+    padding: 10px;
+    width: 90%;
+}
+/* Style for the main contents */
+.main{
+    width: 55%;
+    margin: auto;
+    text-align: center;
+}
+/* Style of the h2 in the main contents */
+.main h2{
+    font-size: 2.5vw;
+    letter-spacing: 2px;
+    white-space: normal;
+    text-align: center;
+}
+/* Style of the h3 in the main contents */
+.main h3{
+    font-size: 2vw;
+    letter-spacing: 2px;
+    white-space: normal;
+    text-align: center;
+}
+/* Style for the home link at the bottom of each section */
+.top{
+    margin: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Style for the About section */
+.home{
+    margin: 20px;
+}
+/* Style for the group of images */
+.images{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+/* Style for indivitual image */
+.image{
+    width: 50%;
+}
+/* Style for img element of image class*/
+.image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* Style for the Menu page */
+/* Style for Menu title */
+.menu-title{
+    color: #ebf3c8;
+}
+/* Style for Menu items */
+.menu-item{
+    color: white;
+}
+/* Style for Menu prices */
+.menu-price{
+    color: rgb(207, 250, 203);
+}
+/* Style for Menu descriptions */
+.menu-description{
+    color: white;
+    font-size: 1.5vw;
+}
+/* Style for tables in Menu page */
+.menu-table{
+    width: 100%;
+    margin: 20px;
+}
+/* Style for table items in Menu page */
+.menu-table-item{
+    width: 85%;
+    text-align: left;
+}
+/* Style for table prices in Menu page */
+.menu-table-price{
+    width: 15%;
+    color: rgb(207, 250, 203);
+    text-align: left;
+}
+/* Style for images in Menu page */
+.menu img{
+    width: 15vw;
+}
+/* Style for privacy statement */
+.privacy{
+    font-size: 1.5vw;
+}
+/* Style for the footer */
+.footer{
+    display: flex;
+    justify-content: space-around;
+    font-size: 1rem;
+    width: 55%;
+    margin: auto;
+}
+/* Style for the individual footer item */
+.footer-item{
+    height: 30px;
+}
+/* Style for the footer menus */
+.footer-left{
+    text-align: left;
+    width: 50%;
+    margin-left: 20px;
+}
+/* Style for the Cancellation Policy */
+.footer-right{
+    text-align: center;
+    width: 50%;
+    margin: 0;
+}
+/* Style of the h4 in the Cancellation Policy */
+.footer-right h4{
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0;
+}
+/* Style for the copyright */
+.copyright p{
+    font-size: 1rem;
+    text-align: center;
+    margin: 80px auto;
+    height: 30px;
+}
+/* Style to make iframe responsive*/
+.responsive-iframe{
+    width: 100%;
+    margin: auto;
+}
+/* Media query for responsive design for screens 1000px or smaller*/
+@media screen and (max-width: 1000px) {
+    body {
+        font-size: 2.5vw;
+    }
+    .heading h1{
+        font-size: 4.5vw;
+    }
+    .header{
+        height: 50vw;
+    }
+    .navigation{
+        font-size: 2vw;
+    }
+    .main h2{
+        font-size: 3.5vw;
+    }
+    .main h3{
+        font-size: 3vw;
+    }
+}
+/* Media query for responsive design for screens 800px or smaller*/
+@media screen and (max-width: 800px) {
+    body {
+        font-size: 3.5vw;
+    }
+    hr{
+        width: 80%;
+    }
+    .navigation {
+		display:flex;
+        justify-content: space-between;
+        font-size: 1rem;
+        height: 15vw;
+        width: 100%;
+    }
+    /* Style for hiding top navigation bar */
+	.list{
+		display: none;
+	}
+    /* Style for showing navigation menu after hamburger icon is pressed */
+    .list.active  {
+		display: block;
+        flex-direction: column;
+        position: absolute;
+        top: 35%;
+        left: 88%;
+        transform: translate(-50%, -50%);
+		width:110px;
+		padding:10px 18px;
+		border-radius:3px;
+		background:rgba(0,0,0,0.7);
+	}
+	.navigation a {
+		display:block;
+	}
+    .navigation-item {
+        padding: 1.5vw;
+    }
+    .nav-top{
+        height: 17vh;
+    }
+    .logo{
+        width: 100%;
+    }
+    .logo img{
+        width: 15vw;
+    }
+    /* Style for hamburger menu icon */
+    .icon{
+        margin: 20px;
+		display: block;
+        font-size: 5vw;
+    }
+    .icon:hover{
+		color:white;
+	}
+    .icon.active{
+		color:#9fa5a2;
+	}
+    .heading h1{
+        font-size: 5vw;
+    }
+    .main {
+      width: 100%;
+    }
+    .main h2 {
+        font-size: 4.5vw;
+    }
+    .main h3 {
+        font-size: 4vw;
+    }
+    .menu-table{
+        width: 80vw;
+        margin: auto;
+    }
+    .menu img{
+        width: 20vw;
+    }
+    .menu-description{
+        font-size: 3vw;
+    }
+    .privacy{
+        font-size: 2.5vw;
+    }
+    .footer{
+        width: 70%;
+        margin: auto;
+    }
+  }
+/* Media query for responsive design for screens 600px or smaller*/
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 4vw;
+        width: 100vw;
+    }
+    hr{
+        width: 90%;
+    }
+    .heading h1{
+        font-size: 6vw;
+    }
+    .main h2{
+        font-size: 5vw;
+    }
+    .main h3{
+        font-size: 4vw;
+    }
+    .list.active  {
+        top: 30%;
+        left: 85%;
+	}
+    .nav-top{
+        height: 12vh
+    }
+    .menu-description{
+        font-size: 3vw;
+    }
+    .privacy{
+        font-size: 3vw;
+    }
+    .footer{
+        width: 90%;
+        margin: auto;
+    }
+    .copyright p{
+        width: 90%;
+    }
+}
+/* Media query for responsive design for screens 450px or smaller*/
+@media screen and (max-width: 450px) {
+    body {
+        font-size: 4.5vw;
+    }
+    .list.active{
+        top: 25%;
+        left: 85%;
+    }
+    .menu-description{
+        font-size: 3.5vw;
+    }
+    .privacy{
+        font-size: 3.5vw;
+    }
+}
