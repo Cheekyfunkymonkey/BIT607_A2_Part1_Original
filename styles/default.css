@@ -181,7 +181,7 @@ hr{
 .footer{
     display: flex;
     justify-content: space-around;
-    font-size: 2vw;
+    font-size: 1.5vw;
     width: 55%;
     margin: auto;
 }
@@ -203,7 +203,7 @@ hr{
 }
 /* Style for the copyright */
 .copyright p{
-    font-size: 2vw;
+    font-size: 1.5vw;
     text-align: center;
     margin: 80px auto;
     height: 30px;
