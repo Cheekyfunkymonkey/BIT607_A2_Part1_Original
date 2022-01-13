@@ -112,6 +112,7 @@ hr{
 .top{
     margin: 30px;
     font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
 }
 /* Style for the About section */
 .home{
@@ -180,7 +181,7 @@ hr{
 .footer{
     display: flex;
     justify-content: space-around;
-    font-size: 1rem;
+    font-size: 2vw;
     width: 55%;
     margin: auto;
 }
@@ -194,21 +195,15 @@ hr{
     width: 50%;
     margin-left: 20px;
 }
-/* Style for the Cancellation Policy */
+/* Style for the Privacy Statement */
 .footer-right{
     text-align: center;
     width: 50%;
     margin: 0;
 }
-/* Style of the h4 in the Cancellation Policy */
-.footer-right h4{
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin: 0;
-}
 /* Style for the copyright */
 .copyright p{
-    font-size: 1rem;
+    font-size: 2vw;
     text-align: center;
     margin: 80px auto;
     height: 30px;
@@ -326,8 +321,12 @@ hr{
     .footer{
         width: 70%;
         margin: auto;
+        font-size: 2.5vw;
     }
-  }
+    .copyright p{
+        font-size: 2.5vw;
+    }
+}
 /* Media query for responsive design for screens 600px or smaller*/
 @media screen and (max-width: 600px) {
     body {
@@ -362,9 +361,11 @@ hr{
     .footer{
         width: 90%;
         margin: auto;
+        font-size: 3vw;
     }
     .copyright p{
         width: 90%;
+        font-size: 3vw;
     }
 }
 /* Media query for responsive design for screens 450px or smaller*/
@@ -380,6 +381,10 @@ hr{
         font-size: 3.5vw;
     }
     .privacy{
+        font-size: 3.5vw;
+    }
+    .copyright p{
+        width: 90%;
         font-size: 3.5vw;
     }
 }
